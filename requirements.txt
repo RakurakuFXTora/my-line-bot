@@ -1,2 +1,3 @@
-Flask==2.2.2
-line-bot-sdk==2.2.1
+Flask==2.2.5
+line-bot-sdk==2.4.3
+
