@@ -332,8 +332,8 @@ def post_group_tweet(rows, result_dict):
 
     heading=(
        f"【速報】\n"
-       f"{c_flag}{c_name}の経済指標\n"
-       f"{time_str} 発表\n"
+       f"{c_flag}{c_name}の経済指標速報です🐯\n"
+       f"{time_str} 発表📣\n"
     )
     lines=[]
     for (rw,dat) in valid:
@@ -394,7 +394,7 @@ def main():
     print("[INFO] investpy + Twitter + LINE Bot start")
     # 起動時 48hスケジュール
     schedule_48h_events()
-    # 毎日22:06に再スケジュール登録
+    # 毎日19:20に再スケジュール登録
     schedule.every().day.at("22:06").do(schedule_48h_events)
 
     # スケジュールを別スレッドで実行
