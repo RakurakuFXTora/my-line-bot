@@ -395,7 +395,7 @@ def main():
     # 起動時 48hスケジュール
     schedule_48h_events()
     # 毎日19:20に再スケジュール登録
-    schedule.every().day.at("22:06").do(schedule_48h_events)
+    schedule.every().day.at("21:41").do(schedule_48h_events)
 
     # スケジュールを別スレッドで実行
     t= threading.Thread(target=scheduling_loop, daemon=True)
